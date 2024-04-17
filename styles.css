@@ -1,0 +1,90 @@
+/*** Body (general) ***/
+body{
+	margin: 0;
+}
+
+/*** Header ***/
+header{
+	display: flex;
+	height: 70 px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: lightgoldenrodyellow ;
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+}
+
+.logo img{
+	height 50px;
+	margin: 15px;
+}
+
+nav a{
+	padding: 10px;
+}
+
+nav a:hover{
+	color: white;
+}
+
+
+
+
+
+
+/*** Inicio 
+#inicio{
+	background-color: yellow;
+	margin: 10px;
+}
+.container {
+	height: 400px;
+	width: 100%;
+	border: 1px solid #0a0a0a;
+	display: flex;
+	flex-direction: row;
+}
+.contenido{
+	height: 400px;
+	width: 100%;
+	border: 1px solid #0a0a0a;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+    align-items: center;
+}
+
+.contenido div {
+	width: 400px;
+	height: 30px;
+	border: 1px dotted blue;
+	display: flex;
+	flex-direction: row;
+	justify-content: left; 
+    align-items: center;
+	padding: 8px;
+	margin: 4px;
+	background-color: #653427;
+	
+}
+
+#numeros{
+	color: #307ea8;
+	font-size: 2em;
+}
+#letras{
+	color: white;
+	font-size: 1.5em;
+}
+***/
+
+
+
+
+
+
+
