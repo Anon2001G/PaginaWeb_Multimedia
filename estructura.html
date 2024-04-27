@@ -1,95 +1,80 @@
 <!DOCTYPE html> 
 <html lang = "es">
 <head>
-    <title>Bob Esponja en Rock Bottom</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="styles.css"> <!--Referencia al CSS de estilos-->
+  <title>Bob Esponja en Rock Bottom</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="styles.css"> <!--Referencia al CSS de estilos-->
 </head>
 <body>
-    <header>
-            <div class="logo">
-                <img src = "Images/logo.jpeg" alt = "Logo Arcadex" />
-                <h2>Arcadex</h2>
-            </div>
-            <nav>
-                <a href="#inicio">Inicio</a>
-                <a href="#campaña">Campaña</a>
-                <a href="#quienes">Quiénes somos</a>
-                <a href="#faq">FAQ</a>
-                <a href="#comentarios">Comentarios</a>
-                <a href="#patrocinar">Patrocinar</a>
-            </nav>    
-    </header>
-    
-    <section id="inicio">
-        <div class="container">
-         <img src = "https://picsum.photos/640/400" alt = "Video promocional" />
-         <div class="contenido">
-          <div class="leyenda">
-              <p id="numeros">4.027€ &nbsp</p>
-              <p id="letras">contribuido de 5.500€</p>
-          </div>
-          <div class="leyenda">
-              <p id="numeros">102 &nbsp</p>
-              <p id="letras">patrocinadores</p>
-          </div>
-          <div>BOTON J</div>
-          <div>BOTON P</div>
+  <img class="background" src="Images/portada.jpeg">
+  <header>
+    <div class="top_principal">
+      <a href="estructura.html" id="logo"><img src="Images/logo.png" alt="Logo Arcadex" style="width: 40px;" /></a>
+      <h2 id="titulo_equipo">Arcadex</h2>
+      <h2 id="lema">LEMA</h2>
+      <div class="linea_top"></div>
+    </div>
+    <nav class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#campaña">Campaña</a>
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#faq">FAQ</a>
+      <a href="#comentarios">Comentarios</a>
+      <a href="#patrocinar">Patrocinar</a>
+    </nav>    
+  </header>
+  
+  <section id="inicio">
+    <h1>BOB ESPONJA EN ROCK BOTTOM</h1>
+    <h2 class="texto_contribuidores">Contribuidores</h2>
+    <div id="contribuidores">
+      <div class="contribuidor">
+        <h3>Contribuidor 1</h3>
+        <p>Aquí un ejemplo para indicar que aquí es donde van las descripciones básicas y sintetizadas de cada contribuidor.</p>
       </div>
-          
+      <div class="contribuidor">
+        <h3>Contribuidor 2</h3>
+        <p>Aquí un ejemplo para indicar que aquí es donde van las descripciones básicas y sintetizadas de cada contribuidor.</p>
       </div>
-      
+      <div class="contribuidor">
+        <h3>Contribuidor 3</h3>
+        <p>Aquí un ejemplo para indicar que aquí es donde van las descripciones básicas y sintetizadas de cada contribuidor.</p>
+      </div>
+    </div>
+    <h2 class="texto_contribuidores">Objetivo principal</h2>
+    <div class="patrocinios">
+      <div class="patrocinios_general">
+        <h2>52€</h2>
+        <h2>/</h2>
+        <h2>1500€</h2>
+      </div>
+      <div class="patrocinios_específicos">
+        
+      </div>
+    </div>
   </section>
 
-  
   <section id="campaña"> 
-    <h3>CAMPAÑA</h3>
-    <p> "Anuncio", frases de gancho, etc </p>
-    <img src = "Images/portada.jpeg" alt = "Imagen portada" /> 
-    <p> historia resumida </p>
-    <img src = "https://picsum.photos/640/400" alt = "Video promocional" />
-    <p> informacion general (edad recomendada, duración, género, motor que usamos, plataformas, etc) </p>
-    <img src = "https://picsum.photos/640/400" alt = "Video promocional" />
-</section>
+    <h1 class="titulos_mayus">CAMPAÑA</h1>
+    <p>Acompaña a Bob Esponja al lugar más profundo del océano: Rock Bottom.<br>
+      Resuelve puzzles, explora y conoce criaturas extrañas.<br>
+    ¿Lograrás huir? ¿O te quedarás atrapado? </p>
+    <img src = "Images/portada.jpeg" class="imagen_portada" alt = "Imagen portada"/> 
+    <h2 class="texto_contribuidores">Historia</h2>
+    <p> Basado en el famoso episodio de la serie <i>Bob Esponja</i> que perturbó a toda una generación.<br>
+      Bob Esponja y Patricio pasan el día en el parque de atracciones <i>Mundo Guante</i>. Pero al volver a casa cogen el bus equivocado que les lleva a la extraña ciudad de <i>Rock Bottom</i>. Patricio logra coger el siguiente bus, pero Bob Esponja no tiene tanta suerte y no le queda más remedio que buscar la estación de autobuses, para averiguar cuándo pasa el próximo bus y volver a <i>Fondo de Bikini</i>.</p>
+    <img src = "https://picsum.photos/640/400" class="capturas" alt = "Video promocional" />
+    <h2 class="texto_contribuidores">Gameplay</h2>
+    <p> Bob Esponja en Rock Bottom es un videojuego <i>point-n-click</i> al más puro estilo pixelart.<br>
+    El jugador podrá interactuar con el entorno, hablar con los personajes y combinar distintos objetos del inventario para ir superando los puzzles.</p>
+    <img src = "Images/captura_controles.png" class="capturas" alt = "Controles"/> 
+    <h2 class="texto_contribuidores">Información</h2>
+    <p> (edad recomendada, duración, género, motor que usamos, plataformas, etc) </p>
+    <img src = "https://picsum.photos/640/400" class="capturas" alt = "Video promocional" />
+  </section>
 
-<h3>SECCION QUIÉNES SOMOS</h3>
-<section id="nosotros">
-    <p> informacion de nosotros y nuestra "empresa", créditos, inspiracion, etc </p>
-</section>
 
-<h3>SECCION FAQ</h3>
-<section id="preguntas">
-    <p> preguntas y respuestas </p>
-</section>
-
-<h3>SECCION COMENTARIOS</h3>
-<section id="comentarios">
-    <p> comentarios y valoraciones (campo en el que se pueda escribir) </p>
-</section>
-
-<h3>SECCION PATROCINAR</h3>
-<section id="patrocinar">
-
-    <table>
-        <caption>Recompensas</caption>
-        <thread>  <!--fotos-->
-            <tr>
-                <th><img src = "https://picsum.photos/400/400" alt = "merch" /> merch1 </th>
-                <th><img src = "https://picsum.photos/400/400" alt = "merch" /> merch2 </th>
-                <th><img src = "https://picsum.photos/400/400" alt = "merch" /> merch3 </th>  
-            </tr>
-        </thread>
-        <tbody> <!--info-->
-            <tr>
-                <td>info</td>
-                <td>info</td>
-                <td>info</td>
-            </tr>   
-        </tbody> 
-    </table>
-
-</section>
 
 </body>
 
