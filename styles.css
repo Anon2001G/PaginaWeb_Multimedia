@@ -17,6 +17,11 @@ body{
   src: url('Fuente/pixelar_fuente_editada.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: fuente_sencilla;
+    src: url('Fuente/Fuente_sencilla.otf') format('opentype');
+}
+
 .background {
 	position: absolute;
 	width: 100%;
