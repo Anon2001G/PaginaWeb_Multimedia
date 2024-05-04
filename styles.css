@@ -12,6 +12,10 @@ body{
 	font-family: pixelar_fuente_editada;
 }
 
+html {
+    scroll-behavior: smooth; 
+}
+
 @font-face {
   font-family: pixelar_fuente_editada;
   src: url('Fuente/pixelar_fuente_editada.ttf') format('truetype');
@@ -40,6 +44,8 @@ body{
 	text-align: center;
 	margin: 15px 0px 0px 0px;
 }
+
+
 
 
 
@@ -115,9 +121,10 @@ header{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	margin: 40px 0 0 0;
 	padding: 0;	
 	color: white;
+	margin: 40px 50px 10px 50px;	
+	border-radius: 20px;
 }
 
 #inicio h1 {
@@ -141,6 +148,8 @@ header{
 	display: flex;
 	margin: 20px 0 20px;
 	font-size: 30px;
+	margin: 10px 50px 10px 50px;	
+	border-radius: 20px;
 
 }
 
@@ -192,6 +201,8 @@ header{
 	align-items: center;
 	flex-direction: column;
 	background: #13102b;
+	margin: 10px 50px 10px 50px;	
+	border-radius: 20px;
 }
 
 #campaña p {
@@ -229,6 +240,8 @@ header{
 	align-items: center;
 	flex-direction: column;
 	background: #3f726ffa;
+	margin: 10px 50px 10px 50px;	
+	border-radius: 20px;
 }
 
 .descripcion{
@@ -250,7 +263,7 @@ header{
 
 .texto_equipo{
 	width: 62%;
-	padding: 10px 380px 10px 0px;
+	padding: 10px 350px 10px 0px;
 	display:flex;
 	text-align: justify;
 	align-items: center;
@@ -266,6 +279,8 @@ header{
 	align-items: center;
 	flex-direction: column;
 	background: #3f4b72fa;
+	margin: 10px 50px 10px 50px;	
+	border-radius: 20px;
 }
 
 #preguntas{
@@ -297,6 +312,16 @@ header{
 
 /*** COMENTARIOS ***/
 
+#comentarios{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: yellow;
+	margin: 10px 50px 10px 50px;	
+	border-radius: 20px;
+}
+
 #comentarios p {
 	position: relative;
 	text-align: center;
@@ -308,7 +333,11 @@ header{
 
 
 /*** DISCLAIMER (FOOTER) ***/
-footer{
+#disclaimer {
+	background: white;
+}
+
+#disclaimer p{
 	font-size: 11px;
 	color: white;
 }
