@@ -55,7 +55,7 @@ header{
 .top_principal{
 	display: flex;
 	align-items: center;
-	margin-left: 10px;
+	margin: 0px 30px;
 }
 
 #logo{
@@ -79,8 +79,12 @@ header{
 }
 
 #lema {
-	margin-left: 480px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 240px;
 	font-size: 27px;
+
 }
 
 .menu {
@@ -236,7 +240,7 @@ header{
 
 .logo_equipo img{
 	width: auto;
-	height: 250px;	
+	height: 325px;	
 }
 
 .texto_equipo{
@@ -246,6 +250,7 @@ header{
 	text-align: justify;
 	align-items: center;
 	font-size: 18px;
+	line-height: 1.5;
 	
 }
 
