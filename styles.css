@@ -9,6 +9,12 @@
 body{
 	overflow: auto;
 	background: black;
+	font-family: pixelar_fuente_editada;
+}
+
+@font-face {
+  font-family: pixelar_fuente_editada;
+  src: url('Fuente/pixelar_fuente_editada.ttf') format('truetype');
 }
 
 .background {
@@ -31,6 +37,8 @@ body{
 }
 
 
+
+
 /*** PARTE DE ARRIBA ***/
 header{
 	position: sticky;
@@ -47,7 +55,7 @@ header{
 .top_principal{
 	display: flex;
 	align-items: center;
-	margin-left: 10px;
+	margin: 0px 30px;
 }
 
 #logo{
@@ -71,8 +79,12 @@ header{
 }
 
 #lema {
-	margin-left: 480px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 240px;
 	font-size: 27px;
+
 }
 
 .menu {
@@ -203,4 +215,100 @@ header{
     box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
 
 }
+
+/*** QUIENES SOMOS ***/
+
+#quienes{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: #3f726ffa;
+}
+
+.descripcion{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px 10px 0px;	
+}
+
+.logo_equipo{
+	width: 35%;
+	display: flex;
+	justify-content: right;
+}
+
+.logo_equipo img{
+	width: auto;
+	height: 325px;	
+}
+
+.texto_equipo{
+	width: 62%;
+	padding: 10px 380px 10px 0px;
+	display:flex;
+	text-align: justify;
+	align-items: center;
+	font-size: 18px;
+	line-height: 1.5;
+	
+}
+
+/*** FAQ ***/
+#faq{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: #3f4b72fa;
+}
+
+#preguntas{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0 20px;
+	font-size: 20px;
+
+}
+
+.caja_preguntas{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 10px 60px;
+	padding: 30px 30px;
+	height: auto;
+	border-radius: 20px;
+	background: #e6ff74;
+	box-shadow: 0px 0px 13px 0px black;
+
+.caja_preguntas p {
+	position: relative;
+	text-align: center;
+	line-height: 1.5;
+	color: yellow;
+}
+
+/*** COMENTARIOS ***/
+
+#comentarios p {
+	position: relative;
+	text-align: center;
+	line-height: 1.5;
+	margin: 10px 300px 10px 300px;	
+	font-size: 20px;
+	color: white;
+}
+
+
+/*** DISCLAIMER (FOOTER) ***/
+footer{
+	font-size: 11px;
+	color: white;
+}
+
+
+
+
 
