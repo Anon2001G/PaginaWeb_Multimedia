@@ -9,12 +9,12 @@
 body{
 	overflow: auto;
 	background: black;
-	font-family: pixelar_fuente;
+	font-family: pixelar_fuente_editada;
 }
 
 @font-face {
-  font-family: pixelar_fuente;
-  src: url('Fuente/pixelar_fuente.ttf') format('truetype');
+  font-family: pixelar_fuente_editada;
+  src: url('Fuente/pixelar_fuente_editada.ttf') format('truetype');
 }
 
 .background {
