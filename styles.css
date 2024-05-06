@@ -190,8 +190,8 @@ header{
 	border: none;
 	cursor: pointer;
 	font-family: pixelar_fuente_editada;
-	margin-top: -270px;
-	margin-bottom: 50px;
+	margin-top: 60px;
+	margin-bottom: -100px;
 	font-size: 70px;
 	padding: 15px 15px 5px;
 	background: #171717;
@@ -300,13 +300,13 @@ header{
 /* Botones que se utilizan para abrir y cerrar el panel de acordeón */
 .accordion {
 	font-family: pixelar_fuente_editada;
-	font-size: 20px;
+	font-size: 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
   margin: 15px 200px 10px;
-  padding: 30px 30px;
+  padding: 20px 20px;
   height: auto;
   border-radius: 20px;
   background: #e6ff74;
@@ -332,7 +332,7 @@ header{
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   margin: -26px 200px 5px;
-  padding: 17px 60px 2px;
+  padding: 19px 60px 3px;
   background: #13102b;
   max-height: 0;
   overflow: hidden;
