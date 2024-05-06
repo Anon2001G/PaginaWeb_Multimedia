@@ -141,6 +141,7 @@ header{
 
 .texto_contribuidores{
 	display: flex;
+	justify-content: center;
 	margin-top: 40px;
 	font-size: 40px;
 	color: rgba(121, 162, 33, 0.8);
@@ -174,12 +175,14 @@ header{
 	font-size: 40px;
 	text-transform: uppercase;
 	font-weight: 100;
+	color: white;
 }
 
 .contribuidor p{
 	margin-top: 20px;
 	font-size: 20px;
 	width: 350px;
+	color: white;
 }
 
 .patrocinios{
@@ -203,7 +206,7 @@ header{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	background: #7b512a;
+	background: #0c122b;
 	margin: 10px 50px 10px 50px;	
 	border-radius: 20px;
 }
@@ -280,6 +283,7 @@ header{
 	flex-direction: row;
 	text-align: center;
 	align-items: center;
+  justify-content: center; 
 	margin: 30px 0px;
 
 }
@@ -301,6 +305,12 @@ header{
 	color: rgba(121, 162, 33, 0.8);
 	font-weight: 100;
 }
+
+.miembro p{
+	line-height: 1.5;
+}
+
+
 
 /*** FAQ ***/
 #faq{
@@ -362,9 +372,46 @@ header{
 }
 
 
+
+/*** CONTRIBUCIONES (patrocinar) ***/
+
+.equipo{
+	display:flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+  justify-content: center; 
+	margin: 30px 0px;
+
+}
+
+.miembro{
+	margin: 0px 20px;
+}
+
+.miembro img{
+	width: auto;
+	height: 150px;	
+	border-radius: 20px;
+  box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
+}
+
+.nombres{
+	margin-top: 10px;
+	font-size: 40px;
+	color: rgba(121, 162, 33, 0.8);
+	font-weight: 100;
+}
+
+.miembro p{
+	line-height: 1.5;
+}
+
+
+
 /*** DISCLAIMER (FOOTER) ***/
 #disclaimer {
-	background: white;
+	background: darkblue;
 }
 
 #disclaimer p{
