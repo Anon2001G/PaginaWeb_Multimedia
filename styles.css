@@ -12,6 +12,10 @@ body{
 	font-family: pixelar_fuente_editada;
 }
 
+html {
+    scroll-behavior: smooth; 
+}
+
 @font-face {
   font-family: pixelar_fuente_editada;
   src: url('Fuente/pixelar_fuente_editada.ttf') format('truetype');
@@ -293,6 +297,8 @@ header{
 	
 }
 
+
+
 /*** FAQ ***/
 #faq{
 	position: relative;
@@ -356,6 +362,16 @@ header{
 
 /*** COMENTARIOS ***/
 
+#comentarios{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: #8a447ffa;
+	margin: 10px 50px 10px 50px;	
+	border-radius: 20px;
+}
+
 #comentarios p {
 	position: relative;
 	text-align: center;
@@ -366,6 +382,55 @@ header{
 	margin: 10px 50px 10px 50px;	
 	border-radius: 20px;
 }
+
+/*** CONTRIBUCIONES (patrocinar) ***/
+#patrocinar{
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background: #ba7848fa;
+	margin: 10px 50px 10px 50px;	
+	border-radius: 20px;
+}
+
+.recompensas{
+	display:flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+  justify-content: center; 
+	margin: 30px 0px;
+
+}
+
+.merch{
+	margin: 0px 20px;
+	background: black;
+	border-radius: 20px;
+  box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
+}
+
+.merch img{
+	width: auto;
+	height: 150px;	
+	border-radius: 20px;
+  box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
+}
+
+.nombres{
+	margin-top: 10px;
+	font-size: 40px;
+	color: rgba(121, 162, 33, 0.8);
+	font-weight: 100;
+}
+
+.merch p{
+	line-height: 1.5;
+	color: white;
+	margin: 10px 30px;
+}
+
 
 
 /*** DISCLAIMER (FOOTER) ***/
