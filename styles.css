@@ -297,7 +297,39 @@ header{
 	
 }
 
+.equipo{
+	display:flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+  justify-content: center; 
+	margin: 30px 0px;
 
+}
+
+.miembro{
+	margin: 0px 20px;
+}
+
+.miembro img{
+	width: auto;
+	height: 150px;	
+	border: 12px solid rgba(0, 0, 0, 0.7);
+	border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+
+}
+
+.nombres{
+	margin-top: 10px;
+	font-size: 40px;
+	color: rgba(121, 162, 33, 0.8);
+	font-weight: 100;
+}
+
+.miembro p{
+	line-height: 1.5;
+}
 
 /*** FAQ ***/
 #faq{
@@ -409,6 +441,7 @@ header{
 	background: black;
 	border-radius: 20px;
   box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
+  width: 350px;
 }
 
 .merch img{
