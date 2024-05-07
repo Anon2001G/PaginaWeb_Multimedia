@@ -402,16 +402,11 @@ video{
 	border-radius: 20px;
 }
 
-#comentarios p {
-	position: relative;
-	text-align: center;
-	line-height: 1.5;
-	margin: 10px 300px 10px 300px;	
-	font-size: 20px;
-	color: white;
-	margin: 10px 50px 10px 50px;	
-	border-radius: 20px;
+#caja{
+	height: 200px;
 }
+
+
 
 /*** CONTRIBUCIONES (patrocinar) ***/
 #patrocinar{
