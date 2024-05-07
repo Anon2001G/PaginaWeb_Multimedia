@@ -1,3 +1,4 @@
+/*desplegable faq*/
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -12,3 +13,10 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+/*botones de patrocinar*/
+document.querySelectorAll(".boton").forEach(boton => {
+  boton.addEventListener("click", function() {
+    alert("¡Gracias!");
+  });
+});
