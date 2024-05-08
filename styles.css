@@ -402,8 +402,10 @@ video{
 	border-radius: 20px;
 }
 
-#caja{
-	height: 200px;
+.utterances-frame{
+	position: initial;
+	height: 300px;
+	z-index: -1;
 }
 
 
