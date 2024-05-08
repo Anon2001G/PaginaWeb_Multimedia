@@ -402,6 +402,10 @@ video{
 	border-radius: 20px;
 }
 
+#caja{
+	height: 200px;
+}
+
 /*** CONTRIBUCIONES (patrocinar) ***/
 #patrocinar{
 	position: relative;
