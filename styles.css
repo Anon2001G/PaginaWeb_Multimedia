@@ -402,6 +402,13 @@ video{
 	border-radius: 20px;
 }
 
+.utterances-frame{
+	position: initial;
+	height: auto;
+	z-index: -1;
+}
+
+
 
 /*** CONTRIBUCIONES (patrocinar) ***/
 #patrocinar{
