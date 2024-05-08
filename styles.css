@@ -404,7 +404,7 @@ video{
 
 .utterances-frame{
 	position: initial;
-	height: 300px;
+	height: auto;
 	z-index: -1;
 }
 
