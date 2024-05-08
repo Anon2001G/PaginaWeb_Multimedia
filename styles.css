@@ -402,14 +402,6 @@ video{
 	border-radius: 20px;
 }
 
-.utterances-frame{
-	position: initial;
-	height: auto;
-	z-index: -1;
-}
-
-
-
 /*** CONTRIBUCIONES (patrocinar) ***/
 #patrocinar{
 	position: relative;
@@ -478,8 +470,6 @@ video{
 	background-color: rgba(214, 245, 47, 0.8);
 	color: black;
 }
-
-
 
 /*** DISCLAIMER (FOOTER) ***/
 footer{
