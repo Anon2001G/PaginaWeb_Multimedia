@@ -180,13 +180,23 @@ header{
 	flex-direction: column;
 	align-items: center;
 	width: 95%;
-	height: 350px;
+	height: 600px;
 }
 
 .patrocinios_general{
 	display: inline-flex;
 	font-size: 18px;
 	gap: 15px;
+	flex-direction: column;
+	align-items: center;
+}
+
+.patrocinios_general div{
+	display: inline-flex;
+	flex-direction: row;
+}
+.patrocinios_especificos {
+	
 }
 
 .patrocinar {
@@ -352,42 +362,42 @@ video{
 .accordion {
 	font-family: pixelar_fuente_editada;
 	font-size: 23px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-  margin: 15px 200px 10px;
-  padding: 20px 20px;
-  height: auto;
-  border-radius: 20px;
-  background: #e6ff74;
-  box-shadow: 0px 0px 13px 0px black;
-  cursor: pointer;
-  transition: 0.4s;
-  position: relative;
-  line-height: 1.5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: left;
+	margin: 15px 200px 10px;
+	padding: 20px 20px;
+	height: auto;
+	border-radius: 20px;
+	background: #e6ff74;
+	box-shadow: 0px 0px 13px 0px black;
+	cursor: pointer;
+	transition: 0.4s;
+	position: relative;
+	line-height: 1.5;
 }
 
 /* Añade un color de fondo al botón si se hace click y cuando mueves el cursor encima (hover) */
 .active, .accordion:hover {
-  background-color: #aabd55;
+  	background-color: #aabd55;
 }
 
 /* Panel de acordeón. Oculto por defecto */
 .panel {
 	color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  align-items: center;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  margin: -26px 200px 5px;
-  padding: 19px 60px 3px;
-  background: #13102b;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	align-items: center;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	margin: -26px 200px 5px;
+	padding: 19px 60px 3px;
+	background: #13102b;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
 
 /*** COMENTARIOS ***/
