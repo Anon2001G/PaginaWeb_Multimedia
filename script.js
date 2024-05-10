@@ -1,5 +1,7 @@
 /*desplegable faq*/
 var acc = document.getElementsByClassName("accordion");
+var campaña = document.querySelectorAll(".hidden");
+
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -20,3 +22,16 @@ document.querySelectorAll(".boton").forEach(boton => {
     alert("¡Gracias!");
   });
 });
+
+
+const observer = new IntersectionObserver((e) => {
+  e.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.remove("hidden");
+      entry.target.classList.add("show");
+    }
+  })
+})
+
+campaña.forEach((el) => observer.observe(el));

@@ -38,9 +38,8 @@ html {
 	letter-spacing: 1.2px;
 	text-align: center;
 	margin: 15px 0px 0px 0px;
+	filter: drop-shadow(5px 5px 1px #535f0ecc);
 }
-
-
 
 
 /*** PARTE DE ARRIBA ***/
@@ -119,20 +118,21 @@ header{
 	color: white;
 }
 
-#descripcion-corta {
-	font-size: 20px;
-	margin: 0 50px 0;
-	text-align: justify;
-}
-
 #inicio h1 {
 	color: rgba(214, 245, 47, 0.8);
 	margin-top: 20px;
 	padding: inherit;
 	font-size: 65px;
 	letter-spacing: 1.2px;
-
+	filter: drop-shadow(5px 5px 1px #5e5b08);
 }
+
+#descripcion-corta {
+	font-size: 20px;
+	margin: 0 50px 0;
+	text-align: justify;
+}
+
 
 .texto_contribuidores{
 	display: flex;
@@ -140,6 +140,7 @@ header{
 	font-size: 40px;
 	color: rgba(121, 162, 33, 0.8);
 	font-weight: 100;
+	filter: drop-shadow(5px 5px 1px #324509cc);
 }
 
 #contribuidores{
@@ -195,8 +196,38 @@ header{
 	display: inline-flex;
 	flex-direction: row;
 }
-.patrocinios_especificos {
-	
+
+.patrocinios_especificos{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 60px 0 0;
+	width: 100%;
+}
+
+.patrocinios_especificos div{
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.Objetivos_adicionales {
+	flex-direction: column;
+	align-items: center;
+}
+
+.Objetivos_adicionales h3{
+	display: flex;
+	align-items: center;
+	color: rgba(160, 168, 50, 0.8);
+	font-size: 23px;
+	height: 60px;
+}
+
+
+.patrocinios a{
+	margin-top: 60px;
+	margin-bottom: -100px;
 }
 
 .patrocinar {
@@ -204,8 +235,6 @@ header{
 	border: none;
 	cursor: pointer;
 	font-family: pixelar_fuente_editada;
-	margin-top: 60px;
-	margin-bottom: -100px;
 	font-size: 70px;
 	padding: 15px 15px 5px;
 	background: #171717;
@@ -238,6 +267,26 @@ header{
 	margin: 10px 300px 10px 300px;	
 	font-size: 20px;
 	color: white;
+}
+
+.hidden {
+	opacity: 0;
+}
+
+.show {
+	animation: pan 1.2s forwards;
+}
+
+@keyframes pan {
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	60%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
 }
 
 .imagen_portada{
