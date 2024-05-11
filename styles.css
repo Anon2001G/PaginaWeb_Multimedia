@@ -13,7 +13,6 @@
 
 html {
 	scroll-behavior: smooth;
-	width: 100%;
 }
 
 body {
@@ -35,11 +34,10 @@ body {
 
 .titulos_mayus {
 	color: rgba(214, 245, 47, 0.8);
-	padding: inherit;
 	font-size: 45px;
 	letter-spacing: 1.2px;
 	text-align: center;
-	margin: 15px 0px 0px 0px;
+	margin: 30px 0px 0px 0px;
 	filter: drop-shadow(5px 5px 1px #535f0ecc);
 }
 
@@ -70,16 +68,17 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 120px;
+	height: 138px;
 	width: 100%;
 	background: rgba(26, 26, 26, 0.8);
 	color: white;	
-	z-index: 2;
+	z-index: 5;
 }
 
 .top_principal {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	margin: 0px 30px;
 }
 
@@ -107,7 +106,8 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0 240px;
+	margin: 0 220px;
+	width: 218px;
 	font-size: 27px;
 }
 
@@ -144,13 +144,12 @@ header {
 #inicio h1 {
 	color: rgba(214, 245, 47, 0.8);
 	margin-top: 20px;
-	padding: inherit;
 	font-size: 65px;
 	letter-spacing: 1.2px;
 	filter: drop-shadow(5px 5px 1px #5e5b08);
 }
 
-#descripcion-corta {
+#descripcion_corta {
 	font-size: 20px;
 	margin: 0 60px;
 	max-width: 1500px;
@@ -213,6 +212,7 @@ header {
 .patrocinios_general div {
 	display: inline-flex;
 	flex-direction: row;
+	font-size: 25px;
 }
 
 .patrocinios_especificos {
@@ -232,6 +232,7 @@ header {
 .Objetivos_adicionales {
 	flex-direction: column;
 	align-items: center;
+	font-size: 20px;
 }
 
 .Objetivos_adicionales h3 {
@@ -293,9 +294,6 @@ header {
 /*Imagen de fondo, capturas de pantalla y el vídeo promo*/
 .imagen_portada {
     max-width: 1010px;
-    margin: 15px 0;
-    border-radius: 20px;
-    box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
 }
 
 .capturas {
@@ -352,7 +350,6 @@ video {
 	align-items: center;
 	font-size: 18px;
 	line-height: 1.5;
-	
 }
 
 .equipo {
@@ -574,35 +571,27 @@ footer {
 
 /*** --- MEDIA QUERY --- ***/
 
+
+
+/*LAPTOP*/
 @media (max-width: 1400px){
 	
 	.menu {
 		max-width: 214px;
-		margin-right: 60px;
+		margin: 10px 60px 10px 0;
 	}
 
 	#lema {
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		margin: 0 200px;
-		font-size: 27px;
 	}
 
-	#descripcion-corta {
-		font-size: 20px;
+	#descripcion_corta {
 		max-width: 900px;
-		text-align: justify;
 	}
 
 	#campaña p {
-		position: relative;
-		text-align: center;
-		line-height: 1.5;
 		max-width: 700px;
 		margin: 20px 80px;
-		font-size: 20px;
-		color: white;
 	}
 
 	.imagen_portada {
@@ -613,54 +602,268 @@ footer {
 	}
 
 	video {
-		margin: 10px 0px;
 		max-width: 800px;
 		max-height: 449px;
-		border-radius: 20px;
-		box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
 	}
 
 	.capturas {
 		width: 640px;
-		margin: 10px 0px;
-		border-radius: 20px;
-		box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
 	}
 
 	/*Botones de abrir y cerrar los paneles*/
 	.accordion {
-		font-family: pixelar_fuente_editada;
-		font-size: 23px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: left;
 		margin: 15px 80px 10px;
-		padding: 20px 20px;
-		height: auto;
-		border-radius: 20px;
-		background: #e6ff74;
-		box-shadow: 0px 0px 13px 0px black;
-		cursor: pointer;
-		transition: 0.4s;
-		position: relative;
-		line-height: 1.5;
 	}
 
 	/*Panel oculto*/
 	.panel {
-		color: white;
-		display: flex;
-		flex-direction: column;
-		text-align: justify;
-		align-items: center;
-		border-bottom-right-radius: 20px;
-		border-bottom-left-radius: 20px;
 		margin: -26px 80px 5px;
-		padding: 19px 60px 3px;
-		background: #13102b;
-		max-height: 0;
-		overflow: hidden;
-		transition: max-height 0.2s ease-out;
+	}
+}
+
+
+
+/*TABLETA (grande)*/
+@media (max-width: 1120px){
+	
+	#logo {
+		margin: 0 25px;
+	}
+	
+	#titulo_equipo {
+		font-size: 31px;
+	}
+
+	.menu {
+		margin: 10px 0;
+	}
+
+	#lema {
+		margin: 0 45px;
+		width: 147px;
+		font-size: 18px;
+	}
+
+	#inicio h1 {
+		font-size: 50px;
+	}
+
+	#descripcion_corta {
+		font-size: 17px;
+		max-width: 700px;
+	}
+
+	.Objetivos_adicionales h3 {
+		font-size: 18px;
+	}
+
+	.patrocinios_general div {
+		font-size: 18px;
+	}
+	
+	.Objetivos_adicionales {
+		font-size: 15px;
+	}
+
+	.imagen_portada, .capturas {
+		max-width: 650px;
+	}
+
+	video {
+		max-width: 800px;
+		max-height: 382px;
+	}
+
+	.texto_equipo {
+		width: 470px;
+		padding: 10px 30px 10px 30px;
+	}
+}
+
+
+
+/*TABLETA (pequeña)*/
+@media (max-width: 800px){
+	
+	header {
+		justify-content: flex-start;
+	}
+
+	.menu {
+		max-width: 214px;
+		margin: 10px 0 10px 45px;
+	}
+
+	#lema {
+		transform: translateY(-1000px);
+		width: 0;
+		height: 0;
+		margin: 0;
+		height: 0;
+	}
+
+	#inicio h1 {
+		font-size: 40px;
+		letter-spacing: 1.1px;
+	}
+
+	#descripcion_corta {
+		font-size: 16px;
+		max-width: 550px;
+		text-align: justify;
+	}
+
+	.Objetivos_adicionales h3 {
+		font-size: 15px;
+	}
+
+	.patrocinios_general div {
+		font-size: 15px;
+	}
+	
+	.Objetivos_adicionales {
+		font-size: 13px;
+	}
+
+	#campaña p {
+		line-height: 1.4;
+		max-width: 440px;
+		font-size: 20px;
+	}
+
+	.imagen_portada, .capturas {
+		max-width: 480px;
+	}
+
+	video {
+		max-width: 500px;
+		max-height: 239px;
+	}
+
+	.texto_equipo {
+		font-size: 17px;
+		width: 343px;
+		padding: 0 0 0 20px;
+	}
+
+	.logo_equipo img {
+		height: 263px;
+	}
+
+	.miembro {
+		margin: 0 20px 20px;
+	}
+}
+
+@media (max-width: 425px){
+	.top_principal {
+		margin: 0 0 0 2px;
+	}
+
+	#logo {
+		margin: 0 15px;
+	}
+
+	#titulo_equipo {
+		font-size: 22px;
+	}
+
+	.menu a {
+		font-size: 15px;
+	}
+
+	#inicio h1 {
+		font-size: 20px;
+	}
+
+	#descripcion_corta {
+		margin: 12px 60px 0 60px;
+		font-size: 15px;
+		width: 240px;
+	}
+
+	#contribuidores {
+		width: 385px;
+	}
+
+	.contribuidor {
+		padding: 27px 0;		
+	}
+
+	.contribuidor h3 {
+		font-size: 36px;
+	}
+
+	.contribuidor p {
+		font-size: 17px;
+		width: 286px;
+		margin: 20px 30px 0;
+	}
+
+	.subtitulos {
+		font-size: 23px;
+	}
+
+	.Objetivos_adicionales h3{
+		font-size: 10px;
+	}
+
+	.patrocinios a button {
+		width: 332px;
+		height: 70px;
+		font-size: 45px;
+	}
+
+	#campaña p {
+		max-width: 173px;
+		margin: 20px 20px;
+		font-size: 11px;
+	}
+
+	.imagen_portada, .capturas {
+		max-width: 237px;
+	}
+
+	video {
+		max-width: 260px;
+		max-height: 136px;
+	}
+
+	.texto_equipo {
+		font-size: 11px;
+		width: 170px;
+		padding: 5px 0 0 20px;
+	}
+
+	.logo_equipo img {
+		height: 172px;
+	}
+
+	.titulos_mayus {
+		font-size: 28px;
+	}
+
+	.accordion {
+		margin: 15px 141px 10px;
+		font-size: 12px;
+	}
+
+	.panel {
+		font-size: 12px;
+		margin: -26px 80px 5px 141px;
+		padding: 19px 10px 17px;
+		width: 130px;
+	}
+
+	.panel p {
+		width: 110px;
+	}
+
+	.merch {
+		width: 248px;
+	}
+
+	.boton {
+		font-size: 33px;
 	}
 }
