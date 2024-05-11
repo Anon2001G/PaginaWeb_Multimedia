@@ -1,4 +1,4 @@
-/*** GENERAL ***/
+/*** --- GENERAL --- ***/
 
 * {
 	margin: 0px;
@@ -6,20 +6,22 @@
 	box-sizing: border-box;
 }
 
-body{
+@font-face {
+  	font-family: pixelar_fuente_editada;
+  	src: url('Fuente/pixelar_fuente_editada.ttf') format('truetype');
+}
+
+html {
+	scroll-behavior: smooth;
+	width: 100%;
+}
+
+body {
 	overflow: auto;
 	background: black;
 	font-family: pixelar_fuente_editada;
 }
 
-html {
-    scroll-behavior: smooth; 
-}
-
-@font-face {
-  font-family: pixelar_fuente_editada;
-  src: url('Fuente/pixelar_fuente_editada.ttf') format('truetype');
-}
 
 .background {
 	position: absolute;
@@ -41,27 +43,47 @@ html {
 	filter: drop-shadow(5px 5px 1px #535f0ecc);
 }
 
+.subtitulos {
+	display: flex;
+	margin-top: 40px;
+	font-size: 40px;
+	color: rgba(121, 162, 33, 0.8);
+	font-weight: 100;
+	filter: drop-shadow(5px 5px 1px #324509cc);
+}
 
-/*** PARTE DE ARRIBA ***/
-header{
+.hidden {
+	opacity: 0;
+}
+
+.show {
+	animation: pan 1.2s forwards;
+}
+
+
+
+/*** --- PARTE DEL MENÚ TOP --- ***/
+
+header {
 	position: sticky;
 	top: 0px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 120px;
+	width: 100%;
 	background: rgba(26, 26, 26, 0.8);
 	color: white;	
 	z-index: 2;
 }
 
-.top_principal{
+.top_principal {
 	display: flex;
 	align-items: center;
 	margin: 0px 30px;
 }
 
-#logo{
+#logo {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -87,27 +109,28 @@ header{
 	justify-content: center;
 	margin: 0 240px;
 	font-size: 27px;
-
 }
 
 .menu {
-	margin-right: 60px;
+	width: 100%;
 }
 
-.menu a{
+.menu a {
 	font-size: 19px;
 	padding: 10px;
 	margin: 0 6px;
 	color: white;
 }
 
-.menu a:hover{
+.menu a:hover {
 	color: rgba(192, 68, 68, 0.8);
 }
 
 
-/*** TÍTULO DE LA PÁGINA WEB ***/
 
+/*** --- PARTE DEL INICIO DE LA PÁGINA WEB --- ***/
+
+/*Texto de bob esponja con su descripción*/
 #inicio {
 	position: relative;
 	display: flex;
@@ -129,33 +152,27 @@ header{
 
 #descripcion-corta {
 	font-size: 20px;
-	margin: 0 50px 0;
+	margin: 0 60px;
+	max-width: 1500px;
 	text-align: justify;
 }
 
-
-.texto_contribuidores{
+/*Contribuidores con su texto*/
+#contribuidores {
 	display: flex;
-	margin-top: 40px;
-	font-size: 40px;
-	color: rgba(121, 162, 33, 0.8);
-	font-weight: 100;
-	filter: drop-shadow(5px 5px 1px #324509cc);
-}
-
-#contribuidores{
-	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: 20px 0 20px;
 	font-size: 30px;
 
 }
 
-.contribuidor{
+.contribuidor {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	margin: 0 60px;
+	margin: 25px 60px;
 	padding: 30px 55px;
 	height: 210px;
 	border-radius: 20px;
@@ -164,19 +181,20 @@ header{
 
 }
 
-.contribuidor h3{
+.contribuidor h3 {
 	font-size: 40px;
 	text-transform: uppercase;
 	font-weight: 100;
 }
 
-.contribuidor p{
+.contribuidor p {
 	margin-top: 20px;
 	font-size: 20px;
 	width: 350px;
 }
 
-.patrocinios{
+/*Objetivo principal, objetivos secundarios y botón de patrocinar*/
+.patrocinios {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -184,7 +202,7 @@ header{
 	height: 600px;
 }
 
-.patrocinios_general{
+.patrocinios_general {
 	display: inline-flex;
 	font-size: 18px;
 	gap: 15px;
@@ -192,12 +210,12 @@ header{
 	align-items: center;
 }
 
-.patrocinios_general div{
+.patrocinios_general div {
 	display: inline-flex;
 	flex-direction: row;
 }
 
-.patrocinios_especificos{
+.patrocinios_especificos {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -205,7 +223,7 @@ header{
 	width: 100%;
 }
 
-.patrocinios_especificos div{
+.patrocinios_especificos div {
 	display: inline-flex;
 	width: 100%;
 	justify-content: center;
@@ -216,7 +234,7 @@ header{
 	align-items: center;
 }
 
-.Objetivos_adicionales h3{
+.Objetivos_adicionales h3 {
 	display: flex;
 	align-items: center;
 	color: rgba(160, 168, 50, 0.8);
@@ -224,13 +242,12 @@ header{
 	height: 60px;
 }
 
-
-.patrocinios a{
+.patrocinios a {
 	margin-top: 60px;
 	margin-bottom: -100px;
 }
 
-.patrocinar {
+.patrocinios a button {
 	text-align: center;
 	border: none;
 	cursor: pointer;
@@ -243,20 +260,23 @@ header{
 	box-shadow: 0px 0px 13px 0px rgba(234, 244, 144, 0.8);
 }
 
-.patrocinar:hover {
+.patrocinios a button:hover {
 	background-color: rgba(214, 245, 47, 0.8);
 	color: black;
 }
 
-/*** CAMPAÑA ***/
 
-#campaña{
+
+/*** --- CAMPAÑA  --- ***/
+
+/*Bloque de la campaña con su texto*/
+#campaña {
 	position: relative;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	background: #13102b;
-	margin: 10px 50px 10px 50px;	
+	margin: 10px 50px 50px;
 	border-radius: 20px;
 }
 
@@ -264,89 +284,70 @@ header{
 	position: relative;
 	text-align: center;
 	line-height: 1.5;
-	margin: 10px 300px 10px 300px;	
+	max-width: 1100px;
+	margin: 20px 260px;
 	font-size: 20px;
 	color: white;
 }
 
-.hidden {
-	opacity: 0;
-}
-
-.show {
-	animation: pan 1.2s forwards;
-}
-
-@keyframes pan {
-	0%{
-		opacity: 0;
-		transform: translateX(-100px);
-	}
-
-	60%{
-		opacity: 1;
-		transform: translateX(0px);
-	}
-}
-
-.imagen_portada{
-    width: 65%;
-    height: auto;
-    margin: 15px 0px 15px 0px;
+/*Imagen de fondo, capturas de pantalla y el vídeo promo*/
+.imagen_portada {
+    max-width: 1010px;
+    margin: 15px 0;
     border-radius: 20px;
     box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
-	
 }
 
-.capturas{
+.capturas {
 	width: 50%;
-    height: auto;
-	margin: 10px 0px 10px 0px;
+	margin: 10px 0px;
 	border-radius: 20px;
     box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
-
 }
 
-video{
-	margin: 10px 0px 10px 0px;
+video {
+	margin: 10px 0px;
 	border-radius: 20px;
-  box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
-
+	box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
 }
 
-/*** QUIENES SOMOS ***/
 
-#quienes{
+
+/*** --- QUIÉNES SOMOS --- ***/
+
+/*Bloque de «quiénes somos» y los textos*/
+#quienes {
 	position: relative;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	background: #3f726ffa;
-	margin: 10px 50px 10px 50px;	
+	margin: 10px 50px 50px;
 	border-radius: 20px;
 }
 
-.descripcion{
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0px 10px 0px;	
+.descripcion {
+  	display: flex;
+  	justify-content: center;
+	align-items: center;
+  	margin: 10px 0px;
 }
 
-.logo_equipo{
-	width: 35%;
+/*Logo y la descripción del equipo (con sus miembros y fotos)*/
+.logo_equipo {
 	display: flex;
+	width: 35%;
 	justify-content: right;
 }
 
-.logo_equipo img{
-	width: auto;
+.logo_equipo img {
 	height: 325px;	
 }
 
-.texto_equipo{
-	width: 62%;
-	padding: 10px 380px 10px 0px;
-	display:flex;
+.texto_equipo {
+	width: 800px;
+	padding: 10px 210px 10px 30px;
+	display: flex;
 	text-align: justify;
 	align-items: center;
 	font-size: 18px;
@@ -354,52 +355,55 @@ video{
 	
 }
 
-.equipo{
-	display:flex;
-	flex-direction: row;
+.equipo {
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
 	align-items: center;
-  justify-content: center; 
+  	justify-content: center; 
 	margin: 30px 0px;
 
 }
 
-.miembro{
+.miembro {
 	margin: 0px 20px;
 }
 
-.miembro img{
-	width: auto;
+.miembro img {
 	height: 150px;	
 	border: 12px solid rgba(0, 0, 0, 0.7);
 	border-radius: 20px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
+  	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8);
 
 }
 
-.nombres{
+.miembro h2 {
 	margin-top: 10px;
 	font-size: 40px;
 	color: rgba(121, 162, 33, 0.8);
 	font-weight: 100;
 }
 
-.miembro p{
+.miembro p {
 	line-height: 1.5;
 }
 
-/*** FAQ ***/
-#faq{
+
+
+/*** --- FAQ --- ***/
+
+/*Bloque de las preguntas*/
+#faq {
 	position: relative;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	background: #3f4b72fa;
-	margin: 10px 50px 10px 50px;	
+	margin: 10px 50px 50px;
 	border-radius: 20px;
 }
 
-#preguntas{
+#preguntas {
 	display: flex;
 	flex-direction: column;
 	margin: 20px 0 20px;
@@ -407,7 +411,7 @@ video{
 
 }
 
-/* Botones que se utilizan para abrir y cerrar el panel de acordeón */
+/*Botones de abrir y cerrar los paneles*/
 .accordion {
 	font-family: pixelar_fuente_editada;
 	font-size: 23px;
@@ -427,12 +431,11 @@ video{
 	line-height: 1.5;
 }
 
-/* Añade un color de fondo al botón si se hace click y cuando mueves el cursor encima (hover) */
 .active, .accordion:hover {
   	background-color: #aabd55;
 }
 
-/* Panel de acordeón. Oculto por defecto */
+/*Panel oculto*/
 .panel {
 	color: white;
 	display: flex;
@@ -449,66 +452,74 @@ video{
 	transition: max-height 0.2s ease-out;
 }
 
-/*** COMENTARIOS ***/
 
-#comentarios{
+
+/*** --- COMENTARIOS --- ***/
+
+/*Comentarios con el bloque externo del github*/
+#comentarios {
 	position: relative;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	background: #8a447ffa;
-	margin: 10px 50px 10px 50px;	
+	margin: 10px 50px 50px;
 	border-radius: 20px;
 }
 
-#caja{
+#caja {
 	height: 200px;
 }
 
-/*** CONTRIBUCIONES (patrocinar) ***/
-#patrocinar{
+
+
+/*** --- CONTRIBUCIONES (patrocinar) --- ***/
+
+/*Merchandising*/
+#patrocinar {
 	position: relative;
 	display: flex;
+	
 	align-items: center;
 	flex-direction: column;
 	background: #ba7848fa;
-	margin: 10px 50px 10px 50px;	
+	margin: 10px 50px;
 	border-radius: 20px;
 }
 
-.recompensas{
+.recompensas {
 	display:flex;
+	flex-wrap: wrap;
 	flex-direction: row;
 	text-align: center;
 	align-items: center;
-  justify-content: center; 
+  	justify-content: center;
 	margin: 30px 0px;
-
 }
 
-.merch{
-	margin: 0px 20px;
+.merch {
+	margin: 18px 20px;
 	background: black;
 	border-radius: 20px;
-  box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
-  width: 350px;
+  	box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
+  	width: 350px;
 }
 
-.merch img{
+.merch img {
 	width: auto;
 	height: 150px;	
 	border-radius: 20px;
-  box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
+  	box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
 }
 
-.nombres{
+.merch h2 {
 	margin-top: 10px;
 	font-size: 40px;
 	color: rgba(121, 162, 33, 0.8);
 	font-weight: 100;
 }
 
-.merch p{
+.merch p {
 	line-height: 1.5;
 	color: white;
 	margin: 10px 30px;
@@ -534,13 +545,122 @@ video{
 	color: black;
 }
 
-/*** DISCLAIMER (FOOTER) ***/
-footer{
+
+
+/*** --- DISCLAIMER (FOOTER) --- ***/
+
+footer {
 	font-size: 11px;
 	color: white;
 }
 
 
 
+/*** --- KEYFRAMES --- ***/
+
+@keyframes pan {
+	0%{
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	60%{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
 
 
+
+/*** --- MEDIA QUERY --- ***/
+
+@media (max-width: 1400px){
+	
+	.menu {
+		max-width: 214px;
+		margin-right: 60px;
+	}
+
+	#lema {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 200px;
+		font-size: 27px;
+	}
+
+	#descripcion-corta {
+		font-size: 20px;
+		max-width: 900px;
+		text-align: justify;
+	}
+
+	#campaña p {
+		position: relative;
+		text-align: center;
+		line-height: 1.5;
+		max-width: 700px;
+		margin: 20px 80px;
+		font-size: 20px;
+		color: white;
+	}
+
+	.imagen_portada {
+		max-width: 850px;
+		margin: 15px 0;
+		border-radius: 20px;
+		box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
+	}
+
+	video {
+		margin: 10px 0px;
+		max-width: 800px;
+		max-height: 449px;
+		border-radius: 20px;
+		box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
+	}
+
+	.capturas {
+		width: 640px;
+		margin: 10px 0px;
+		border-radius: 20px;
+		box-shadow: 0px 0px 7px 0px rgba(234, 244, 144, 0.8);
+	}
+
+	/*Botones de abrir y cerrar los paneles*/
+	.accordion {
+		font-family: pixelar_fuente_editada;
+		font-size: 23px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: left;
+		margin: 15px 80px 10px;
+		padding: 20px 20px;
+		height: auto;
+		border-radius: 20px;
+		background: #e6ff74;
+		box-shadow: 0px 0px 13px 0px black;
+		cursor: pointer;
+		transition: 0.4s;
+		position: relative;
+		line-height: 1.5;
+	}
+
+	/*Panel oculto*/
+	.panel {
+		color: white;
+		display: flex;
+		flex-direction: column;
+		text-align: justify;
+		align-items: center;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		margin: -26px 80px 5px;
+		padding: 19px 60px 3px;
+		background: #13102b;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+}

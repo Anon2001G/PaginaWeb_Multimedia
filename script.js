@@ -3,7 +3,7 @@ var acc = document.getElementsByClassName("accordion");
 var campaña = document.querySelectorAll(".hidden");
 
 var i;
-
+console.log(acc);
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
