@@ -1,6 +1,5 @@
 /*desplegable faq*/
 var acc = document.getElementsByClassName("accordion");
-var campaña = document.querySelectorAll(".hidden");
 
 var i;
 console.log(acc);
@@ -23,6 +22,7 @@ document.querySelectorAll(".boton").forEach(boton => {
   });
 });
 
+var campaña = document.querySelectorAll(".hidden");
 
 const observer = new IntersectionObserver((e) => {
   e.forEach((entry) => {
